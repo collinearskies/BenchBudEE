@@ -35,7 +35,7 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 9
+Sheet 9 9
 Title ""
 Date "9 feb 2014"
 Rev ""
@@ -45,24 +45,281 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 8350 5200 0    60   Output ~ 0
-Relay+
-Text HLabel 8350 5650 0    60   Input ~ 0
-Relay-
-Text HLabel 8300 4250 0    60   Output ~ 0
+Text HLabel 6350 4600 2    60   Output ~ 0
+RELAY+
+Text HLabel 8150 4600 2    60   Output ~ 0
+RELAY-
+Text HLabel 6350 3500 2    60   Output ~ 0
 MOSI
-Text HLabel 8300 4400 0    60   Input ~ 0
+Text HLabel 6350 3600 2    60   Input ~ 0
 MISO
-Text HLabel 8300 4550 0    60   Output ~ 0
+Text HLabel 6350 3400 2    60   Output ~ 0
 SCLK
-Text HLabel 8300 4700 0    60   Output ~ 0
-CS_N
-Text HLabel 8300 3450 0    60   Output ~ 0
-LED_EN
-Text HLabel 8300 3650 0    60   Output ~ 0
-LED_FREQ
-Text HLabel 8300 2700 0    60   Output ~ 0
-FAN_EN
-Text HLabel 8300 2900 0    60   Input ~ 0
+Text HLabel 6350 4000 2    60   Output ~ 0
+DAC_CS_N
+Text HLabel 6350 3700 2    60   Output ~ 0
+FAN_PWM
+Text HLabel 2050 4500 0    60   Input ~ 0
 TACH_MEAS
+$Comp
+L ARDUINOPINS ARD?
+U 1 1 52F8718B
+P 4050 4000
+F 0 "ARD?" H 4750 3050 60  0000 C CNN
+F 1 "ARDUINOPINS" H 4100 4900 60  0000 C CNN
+F 2 "" H 4100 2700 60  0000 C CNN
+F 3 "" H 4100 2700 60  0000 C CNN
+	1    4050 4000
+	1    0    0    -1  
+$EndComp
+Text HLabel 2050 4400 0    60   Input ~ 0
+CURR_MEAS
+$Comp
+L R R?
+U 1 1 52F874A4
+P 5650 3700
+F 0 "R?" V 5730 3700 40  0000 C CNN
+F 1 "R" V 5657 3701 40  0000 C CNN
+F 2 "~" V 5580 3700 30  0000 C CNN
+F 3 "~" H 5650 3700 30  0000 C CNN
+	1    5650 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 3700 5400 3700
+Wire Wire Line
+	5900 3700 6350 3700
+$Comp
+L R R?
+U 1 1 52F874CB
+P 5650 4600
+F 0 "R?" V 5730 4600 40  0000 C CNN
+F 1 "R" V 5657 4601 40  0000 C CNN
+F 2 "~" V 5580 4600 30  0000 C CNN
+F 3 "~" H 5650 4600 30  0000 C CNN
+	1    5650 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 4600 5400 4600
+Wire Wire Line
+	5900 4600 6350 4600
+$Comp
+L GND #PWR?
+U 1 1 52F88224
+P 8000 4800
+F 0 "#PWR?" H 8000 4800 30  0001 C CNN
+F 1 "GND" H 8000 4730 30  0001 C CNN
+F 2 "" H 8000 4800 60  0000 C CNN
+F 3 "" H 8000 4800 60  0000 C CNN
+	1    8000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4800 8000 4600
+Wire Wire Line
+	8000 4600 8150 4600
+$Comp
+L R R?
+U 1 1 52F8823A
+P 2650 4500
+F 0 "R?" V 2730 4500 40  0000 C CNN
+F 1 "R" V 2657 4501 40  0000 C CNN
+F 2 "~" V 2580 4500 30  0000 C CNN
+F 3 "~" H 2650 4500 30  0000 C CNN
+	1    2650 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F88240
+P 2650 4400
+F 0 "R?" V 2730 4400 40  0000 C CNN
+F 1 "R" V 2657 4401 40  0000 C CNN
+F 2 "~" V 2580 4400 30  0000 C CNN
+F 3 "~" H 2650 4400 30  0000 C CNN
+	1    2650 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 4400 3100 4400
+Wire Wire Line
+	3100 4500 2900 4500
+Wire Wire Line
+	2400 4500 2050 4500
+Wire Wire Line
+	2050 4400 2400 4400
+Text HLabel 2050 4200 0    60   Input ~ 0
+V+_ADJ_MON
+Text HLabel 2050 4300 0    60   Input ~ 0
+V-_ADJ_MON
+$Comp
+L R R?
+U 1 1 52F88E4E
+P 2650 4300
+F 0 "R?" V 2730 4300 40  0000 C CNN
+F 1 "R" V 2657 4301 40  0000 C CNN
+F 2 "~" V 2580 4300 30  0000 C CNN
+F 3 "~" H 2650 4300 30  0000 C CNN
+	1    2650 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F88E54
+P 2650 4200
+F 0 "R?" V 2730 4200 40  0000 C CNN
+F 1 "R" V 2657 4201 40  0000 C CNN
+F 2 "~" V 2580 4200 30  0000 C CNN
+F 3 "~" H 2650 4200 30  0000 C CNN
+	1    2650 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 4200 2400 4200
+Wire Wire Line
+	2400 4300 2050 4300
+Wire Wire Line
+	2900 4200 3100 4200
+Wire Wire Line
+	3100 4300 2900 4300
+$Comp
+L R R?
+U 1 1 52F88E9C
+P 5650 4000
+F 0 "R?" V 5730 4000 40  0000 C CNN
+F 1 "R" V 5657 4001 40  0000 C CNN
+F 2 "~" V 5580 4000 30  0000 C CNN
+F 3 "~" H 5650 4000 30  0000 C CNN
+	1    5650 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F88EA2
+P 5650 3600
+F 0 "R?" V 5730 3600 40  0000 C CNN
+F 1 "R" V 5657 3601 40  0000 C CNN
+F 2 "~" V 5580 3600 30  0000 C CNN
+F 3 "~" H 5650 3600 30  0000 C CNN
+	1    5650 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F88EA8
+P 5650 3500
+F 0 "R?" V 5730 3500 40  0000 C CNN
+F 1 "R" V 5657 3501 40  0000 C CNN
+F 2 "~" V 5580 3500 30  0000 C CNN
+F 3 "~" H 5650 3500 30  0000 C CNN
+	1    5650 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52F88EAE
+P 5650 3400
+F 0 "R?" V 5730 3400 40  0000 C CNN
+F 1 "R" V 5657 3401 40  0000 C CNN
+F 2 "~" V 5580 3400 30  0000 C CNN
+F 3 "~" H 5650 3400 30  0000 C CNN
+	1    5650 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 3400 5400 3400
+Wire Wire Line
+	5400 3500 5050 3500
+Wire Wire Line
+	5050 3600 5400 3600
+Wire Wire Line
+	5400 4000 5050 4000
+Wire Wire Line
+	5900 4000 6350 4000
+Wire Wire Line
+	6350 3600 5900 3600
+Wire Wire Line
+	5900 3500 6350 3500
+Wire Wire Line
+	6350 3400 5900 3400
+Text HLabel 6350 3800 2    60   Output ~ 0
+LED_EN_PWM
+$Comp
+L R R?
+U 1 1 52F88F48
+P 5650 3800
+F 0 "R?" V 5730 3800 40  0000 C CNN
+F 1 "R" V 5657 3801 40  0000 C CNN
+F 2 "~" V 5580 3800 30  0000 C CNN
+F 3 "~" H 5650 3800 30  0000 C CNN
+	1    5650 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 3800 5400 3800
+Wire Wire Line
+	5900 3800 6350 3800
+$Comp
+L R R?
+U 1 1 52F8F934
+P 5650 3900
+F 0 "R?" V 5730 3900 40  0000 C CNN
+F 1 "R" V 5657 3901 40  0000 C CNN
+F 2 "~" V 5580 3900 30  0000 C CNN
+F 3 "~" H 5650 3900 30  0000 C CNN
+	1    5650 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 3900 5400 3900
+Text HLabel 6350 3900 2    60   Output ~ 0
+ADC_CS_N
+Wire Wire Line
+	6350 3900 5900 3900
+Text HLabel 6350 4700 2    60   Input ~ 0
+FAN_MODE
+$Comp
+L R R?
+U 1 1 52F7EF78
+P 5650 4700
+F 0 "R?" V 5730 4700 40  0000 C CNN
+F 1 "R" V 5657 4701 40  0000 C CNN
+F 2 "~" V 5580 4700 30  0000 C CNN
+F 3 "~" H 5650 4700 30  0000 C CNN
+	1    5650 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 4700 6350 4700
+Wire Wire Line
+	5050 4700 5400 4700
+$Comp
+L R R?
+U 1 1 52F7F221
+P 2650 3750
+F 0 "R?" V 2730 3750 40  0000 C CNN
+F 1 "R" V 2657 3751 40  0000 C CNN
+F 2 "~" V 2580 3750 30  0000 C CNN
+F 3 "~" H 2650 3750 30  0000 C CNN
+	1    2650 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 3750 3100 3750
+$Comp
+L +12P #PWR?
+U 1 1 52F7F246
+P 2300 3600
+F 0 "#PWR?" H 2300 3570 30  0001 C CNN
+F 1 "+12P" H 2300 3700 30  0000 C CNN
+F 2 "" H 2300 3600 60  0000 C CNN
+F 3 "" H 2300 3600 60  0000 C CNN
+	1    2300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3600 2300 3750
+Wire Wire Line
+	2300 3750 2400 3750
 $EndSCHEMATC

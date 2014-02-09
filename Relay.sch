@@ -35,7 +35,7 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 3 9
 Title ""
 Date "9 feb 2014"
 Rev ""
@@ -46,13 +46,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 4150 3450 0    60   Input ~ 0
-DIN+
+RELAY+
 Text HLabel 4150 3800 0    60   Output ~ 0
-DIN-
+RELAY-
 Text HLabel 10250 2700 2    60   BiDi ~ 0
-NC
+RELAY_NC
 Text HLabel 10250 2900 2    60   BiDi ~ 0
-NO
+RELAY_NO
 $Comp
 L PHTRANS U?
 U 1 1 52F67364
@@ -109,7 +109,7 @@ F 3 "~" H 9650 2750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 10250 2050 2    60   BiDi ~ 0
-COM
+RELAY_COM
 $Comp
 L R R?
 U 1 1 52F678EA
