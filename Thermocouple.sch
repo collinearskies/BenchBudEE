@@ -35,9 +35,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 9
+Sheet 2 9
 Title ""
-Date "9 feb 2014"
+Date "18 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -390,19 +390,8 @@ F 3 "" H 10400 5750 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	10400 5750 10400 6100
-$Comp
-L -12V #PWR?
-U 1 1 52F32F37
-P 10400 6550
-F 0 "#PWR?" H 10400 6680 20  0001 C CNN
-F 1 "-12V" H 10400 6650 30  0000 C CNN
-F 2 "" H 10400 6550 60  0000 C CNN
-F 3 "" H 10400 6550 60  0000 C CNN
-	1    10400 6550
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	10400 6550 10400 6500
+	10400 6500 10400 6600
 Wire Wire Line
 	8950 6050 10400 6050
 Connection ~ 10400 5850
@@ -441,4 +430,15 @@ Text Notes 10600 3500 0    60   ~ 0
 Analog TC
 Text Notes 2350 2900 0    60   ~ 0
 16-24 Bit ADC
+$Comp
+L AGND #PWR?
+U 1 1 5302CE9A
+P 10400 6600
+F 0 "#PWR?" H 10400 6600 40  0001 C CNN
+F 1 "AGND" H 10400 6530 50  0000 C CNN
+F 2 "" H 10400 6600 60  0000 C CNN
+F 3 "" H 10400 6600 60  0000 C CNN
+	1    10400 6600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

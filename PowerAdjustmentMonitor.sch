@@ -35,9 +35,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 7 9
 Title ""
-Date "9 feb 2014"
+Date "18 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -329,7 +329,6 @@ Wire Wire Line
 	2450 1650 3400 1650
 Wire Wire Line
 	3150 1650 3150 1500
-Connection ~ 3150 800 
 Connection ~ 3150 1650
 $Comp
 L AGND #PWR?
@@ -346,22 +345,18 @@ Wire Wire Line
 	3900 1650 4050 1650
 Wire Wire Line
 	4050 1650 4050 1750
-Text HLabel 5700 800  0    60   Output ~ 0
+Text HLabel 5700 800  2    60   Output ~ 0
 V+_ADJ
-Text HLabel 5500 5700 0    60   Output ~ 0
+Text HLabel 5500 5700 2    60   Output ~ 0
 V-_ADJ
-Text HLabel 10100 2300 0    60   Output ~ 0
+Text HLabel 10100 2300 2    60   Output ~ 0
 3V3_MON
-Text HLabel 10100 2550 0    60   Output ~ 0
+Text HLabel 10100 2550 2    60   Output ~ 0
 5V_MON
-Text HLabel 10100 2900 0    60   Output ~ 0
+Text HLabel 10100 2900 2    60   Output ~ 0
 V+_ADJ_MON
-Text HLabel 10100 3200 0    60   Output ~ 0
+Text HLabel 10100 3200 2    60   Output ~ 0
 V-_ADJ_MON
-Text HLabel 10200 4550 0    60   Output ~ 0
-V+_CURR_MON
-Text HLabel 10200 6000 0    60   Output ~ 0
-V-_CURR_MON
 $Comp
 L R R?
 U 1 1 52F6EA99
@@ -444,154 +439,10 @@ Wire Wire Line
 	8850 2050 8850 2300
 Wire Wire Line
 	8850 2300 10100 2300
-$Comp
-L R R?
-U 1 1 52F6ED35
-P 4050 5700
-F 0 "R?" V 4130 5700 40  0000 C CNN
-F 1 "R" V 4057 5701 40  0000 C CNN
-F 2 "~" V 3980 5700 30  0000 C CNN
-F 3 "~" H 4050 5700 30  0000 C CNN
-	1    4050 5700
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	2900 5700 3800 5700
+	2900 5700 5500 5700
 Wire Wire Line
-	4300 5700 5500 5700
-Wire Wire Line
-	2850 800  3700 800 
-Wire Wire Line
-	4200 800  5700 800 
-$Comp
-L R R?
-U 1 1 52F6EEF0
-P 3950 800
-F 0 "R?" V 4030 800 40  0000 C CNN
-F 1 "R" V 3957 801 40  0000 C CNN
-F 2 "~" V 3880 800 30  0000 C CNN
-F 3 "~" H 3950 800 30  0000 C CNN
-	1    3950 800 
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3600 5700 3600 5500
-Wire Wire Line
-	3600 5500 4150 5500
-Connection ~ 3600 5700
-Text Label 3850 5500 0    60   ~ 0
-V-_MON
-Wire Wire Line
-	3550 800  3550 1150
-Wire Wire Line
-	3550 1150 4250 1150
-Connection ~ 3550 800 
-Text Label 3850 1150 0    60   ~ 0
-V+_MON
-$Comp
-L LM324 U?
-U 1 1 52F6FECD
-P 8800 6000
-F 0 "U?" H 8850 6200 60  0000 C CNN
-F 1 "LM324" H 8950 5800 50  0000 C CNN
-F 2 "" H 8800 6000 60  0000 C CNN
-F 3 "" H 8800 6000 60  0000 C CNN
-	1    8800 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L +12V #PWR?
-U 1 1 52F6FEE1
-P 8700 5500
-F 0 "#PWR?" H 8700 5450 20  0001 C CNN
-F 1 "+12V" H 8700 5600 30  0000 C CNN
-F 2 "" H 8700 5500 60  0000 C CNN
-F 3 "" H 8700 5500 60  0000 C CNN
-	1    8700 5500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L -12V #PWR?
-U 1 1 52F6FEF0
-P 8700 6600
-F 0 "#PWR?" H 8700 6730 20  0001 C CNN
-F 1 "-12V" H 8700 6700 30  0000 C CNN
-F 2 "" H 8700 6600 60  0000 C CNN
-F 3 "" H 8700 6600 60  0000 C CNN
-	1    8700 6600
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	8700 5500 8700 5600
-Wire Wire Line
-	8700 6400 8700 6600
-$Comp
-L LM324 U?
-U 1 1 52F6FFA1
-P 8800 4550
-F 0 "U?" H 8850 4750 60  0000 C CNN
-F 1 "LM324" H 8950 4350 50  0000 C CNN
-F 2 "" H 8800 4550 60  0000 C CNN
-F 3 "" H 8800 4550 60  0000 C CNN
-	1    8800 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L +12V #PWR?
-U 1 1 52F6FFA7
-P 8700 4050
-F 0 "#PWR?" H 8700 4000 20  0001 C CNN
-F 1 "+12V" H 8700 4150 30  0000 C CNN
-F 2 "" H 8700 4050 60  0000 C CNN
-F 3 "" H 8700 4050 60  0000 C CNN
-	1    8700 4050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L -12V #PWR?
-U 1 1 52F6FFAD
-P 8700 5150
-F 0 "#PWR?" H 8700 5280 20  0001 C CNN
-F 1 "-12V" H 8700 5250 30  0000 C CNN
-F 2 "" H 8700 5150 60  0000 C CNN
-F 3 "" H 8700 5150 60  0000 C CNN
-	1    8700 5150
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	8700 4050 8700 4150
-Wire Wire Line
-	8700 4950 8700 5150
-Wire Wire Line
-	9300 4550 10200 4550
-Wire Wire Line
-	9300 6000 10200 6000
-Wire Wire Line
-	8300 4650 8200 4650
-Wire Wire Line
-	8200 4650 8200 5300
-Wire Wire Line
-	8200 5300 9450 5300
-Wire Wire Line
-	9450 5300 9450 4550
-Connection ~ 9450 4550
-Wire Wire Line
-	8300 6100 8150 6100
-Wire Wire Line
-	8150 6100 8150 6800
-Wire Wire Line
-	8150 6800 9450 6800
-Wire Wire Line
-	9450 6800 9450 6000
-Connection ~ 9450 6000
-Wire Wire Line
-	8300 5900 7550 5900
-Wire Wire Line
-	8300 4450 7600 4450
-Text Label 7700 4450 0    60   ~ 0
-V+_MON
-Text Label 7650 5900 0    60   ~ 0
-V-_MON
+	2850 800  5700 800 
 $Comp
 L RVAR R?
 U 1 1 52F701D6
