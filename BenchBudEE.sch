@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
 Title ""
-Date "18 feb 2014"
+Date "20 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -156,17 +156,13 @@ Wire Wire Line
 Wire Wire Line
 	7050 4450 4200 4450
 Wire Wire Line
-	7050 1950 7050 3500
-Wire Wire Line
-	7050 3500 7050 4450
+	7050 1950 7050 4450
 Wire Wire Line
 	7050 1950 8200 1950
 Wire Wire Line
 	7150 4600 4200 4600
 Wire Wire Line
-	7150 2050 7150 3750
-Wire Wire Line
-	7150 3750 7150 4600
+	7150 2050 7150 4600
 Wire Wire Line
 	7150 2050 8200 2050
 Wire Wire Line
@@ -178,9 +174,7 @@ Wire Wire Line
 Wire Wire Line
 	7350 4900 4200 4900
 Wire Wire Line
-	7350 2250 7350 4000
-Wire Wire Line
-	7350 4000 7350 4900
+	7350 2250 7350 4900
 Wire Wire Line
 	7350 2250 8200 2250
 Wire Wire Line
@@ -251,11 +245,7 @@ Wire Wire Line
 Wire Wire Line
 	6050 6350 8200 6350
 Wire Wire Line
-	4200 6700 6750 6700
-Wire Wire Line
-	6750 6700 6750 6700
-Wire Wire Line
-	6750 6700 8200 6700
+	4200 6700 8200 6700
 Wire Wire Line
 	8200 1650 6800 1650
 Wire Wire Line
