@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
 Title ""
-Date "21 feb 2014"
+Date "22 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -263,9 +263,9 @@ F3 "TC IN -" I R 9400 4000 60
 F4 "MOSI" I L 8200 3400 60 
 F5 "MISO" O L 8200 3550 60 
 F6 "SCLK" I L 8200 3700 60 
-F8 "~CS" I L 8200 3850 60 
-F9 "~DR" O L 8200 4300 60 
-F10 "~RESET" I L 8200 4150 60 
+F7 "~CS" I L 8200 3850 60 
+F8 "~DR" O L 8200 4300 60 
+F9 "~RESET" I L 8200 4150 60 
 $EndSheet
 Wire Wire Line
 	3400 5850 7250 5850
