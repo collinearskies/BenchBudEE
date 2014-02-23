@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 22/02/2014 19:35:07
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 22/02/2014 20:07:25
 
 BeginCmp
 TimeStamp = /52F2E3BD/53070C98;
@@ -18,21 +18,21 @@ BeginCmp
 TimeStamp = /52F2E422/5302A98A;
 Reference = C2;
 ValeurCmp = C;
-IdModule  = ;
+IdModule  = SM1206;
 EndCmp
 
 BeginCmp
 TimeStamp = /52F2E422/52F68508;
 Reference = C3;
 ValeurCmp = C;
-IdModule  = ;
+IdModule  = SM1206;
 EndCmp
 
 BeginCmp
 TimeStamp = /52F2E422/52F68515;
 Reference = C4;
 ValeurCmp = C;
-IdModule  = ;
+IdModule  = SM1206;
 EndCmp
 
 BeginCmp
@@ -157,22 +157,22 @@ EndCmp
 BeginCmp
 TimeStamp = /52F2E422/5302A984;
 Reference = L1;
-ValeurCmp = INDUCTOR;
-IdModule  = ;
+ValeurCmp = CM322522-220KL;
+IdModule  = SM1210L;
 EndCmp
 
 BeginCmp
 TimeStamp = /52F2E422/52F684DE;
 Reference = L2;
-ValeurCmp = INDUCTOR;
-IdModule  = ;
+ValeurCmp = CM322522-220KL;
+IdModule  = SM1210L;
 EndCmp
 
 BeginCmp
 TimeStamp = /52F2E422/52F684EB;
 Reference = L3;
-ValeurCmp = INDUCTOR;
-IdModule  = ;
+ValeurCmp = CM322522-220KL;
+IdModule  = SM1210L;
 EndCmp
 
 BeginCmp
@@ -340,7 +340,7 @@ BeginCmp
 TimeStamp = /52F2E422/52F6842F;
 Reference = R14;
 ValeurCmp = R;
-IdModule  = ;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -605,36 +605,36 @@ EndCmp
 BeginCmp
 TimeStamp = /52F2E422/52F67EC9;
 Reference = SW1;
-ValeurCmp = SWITCH_INV;
-IdModule  = ;
+ValeurCmp = Power Switch;
+IdModule  = BB_switch;
 EndCmp
 
 BeginCmp
 TimeStamp = /52F2E422/52F7D3F0;
 Reference = TH1;
-ValeurCmp = THERMISTOR;
-IdModule  = ;
+ValeurCmp = MINISMDC050F-2;
+IdModule  = SM1812;
 EndCmp
 
 BeginCmp
 TimeStamp = /52F2E422/52F7D3FF;
 Reference = TH2;
-ValeurCmp = THERMISTOR;
-IdModule  = ;
+ValeurCmp = MINISMDC050F-2;
+IdModule  = SM1812;
 EndCmp
 
 BeginCmp
 TimeStamp = /52F2E422/52F7D40E;
 Reference = TH3;
-ValeurCmp = THERMISTOR;
-IdModule  = ;
+ValeurCmp = MINISMDC050F-2;
+IdModule  = SM1812;
 EndCmp
 
 BeginCmp
 TimeStamp = /52F2E422/52F7D41D;
 Reference = TH4;
-ValeurCmp = THERMISTOR;
-IdModule  = ;
+ValeurCmp = MINISMDC050F-2;
+IdModule  = SM1812;
 EndCmp
 
 BeginCmp
